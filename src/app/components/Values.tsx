@@ -40,9 +40,12 @@ export default function Values() {
     },
   ];
   return (
-    <div className="grid grid-cols-2 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-[10%]">
       {valueParagrahs.map(({ title, body, Icon }) => (
-        <div key={title} className="mb-4">
+        <div
+          key={title}
+          className="mb-4 flex flex-col items-center text-center"
+        >
           <Icon fontSize="large" className="mb-2 fill-green-300" />
           <h3 className="text-xl font-bold mb-2">{title}</h3>
           <p>{body}</p>

@@ -1,5 +1,7 @@
 import Image from "next/image";
 import HomePageInfo, { PageInfo } from "./components/MainSection";
+import ValueSection from "./components/ValueSection";
+import JoinUsSection from "./components/JoinUsSection";
 
 export default function Home() {
   const mainSections: PageInfo[] = [
@@ -85,13 +87,15 @@ export default function Home() {
           fill
           sizes="(min-width: 1280px) 278px, (min-width: 1040px) calc(12.73vw + 118px), (min-width: 800px) 33.18vw, (min-width: 540px) 50vw, calc(100vw - 16px)"
         />
-        <div className="absolute bottom-1/2 right-1/2 translate-x-1/2 text-gray-50">
+        <div className="absolute bottom-1/2 right-1/2 translate-x-1/2 translate-y-1/2 text-gray-50">
           <h2 className="text-xl font-bold">We are Green Cleaners</h2>
           <small>Here to provide eco-friendly cleaning services</small>
         </div>
       </div>
       <section className="pt-56 px-4">
         <HomePageInfo pageInfo={mainSections} />
+        <ValueSection />
+        <JoinUsSection />
       </section>
     </section>
   );

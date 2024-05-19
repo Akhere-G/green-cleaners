@@ -16,7 +16,13 @@ const FooterSection = ({ title, links }: FooterSectionProps) => {
       <nav>
         <ul>
           {links.map(({ title, link }) => {
-            return link ? <Link href={link}>{title}</Link> : <p>{title}</p>;
+            return link ? (
+              <Link key={link} href={link}>
+                {title}
+              </Link>
+            ) : (
+              <p key={link}>{title}</p>
+            );
           })}
         </ul>
       </nav>

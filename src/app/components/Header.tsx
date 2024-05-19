@@ -18,7 +18,9 @@ export default function Header() {
         <nav>
           <ul className="gap-2 flex">
             {links.map(({ title, link }) => (
-              <Link href={link}>{title}</Link>
+              <Link key={link} href={link}>
+                {title}
+              </Link>
             ))}
           </ul>
         </nav>

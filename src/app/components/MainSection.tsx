@@ -25,7 +25,7 @@ export default function HomePageInfo({ pageInfo }: HomePageInfoProps) {
         return (
           <section
             key={id}
-            className={`flex gap-2 flex-col mb-10 ${
+            className={`card flex gap-2 flex-col mb-10 ${
               isReversed ? "md:flex-row-reverse" : "md:flex-row"
             }`}
           >
@@ -33,7 +33,7 @@ export default function HomePageInfo({ pageInfo }: HomePageInfoProps) {
               <h2 className="title-primary">{title}</h2>
               <div>
                 {sections.map((section, i) => (
-                  <>
+                  <div key={i}>
                     {section.title ? (
                       <h3 className="text-lg text-green-900 font-light">
                         {section.title}
@@ -44,7 +44,7 @@ export default function HomePageInfo({ pageInfo }: HomePageInfoProps) {
                         {paragraph}
                       </p>
                     ))}
-                  </>
+                  </div>
                 ))}
               </div>
             </div>

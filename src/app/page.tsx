@@ -1,5 +1,5 @@
 import Image from "next/image";
-import HomePageInfo, { PageInfo } from "./components/MainSection";
+import HomePageInfo, { PageInfo } from "./components/MainPageInfo";
 import ValueSection from "./components/ValueSection";
 import JoinUsSection from "./components/JoinUsSection";
 import hero from "/public/cleaners.jpg";
@@ -10,7 +10,7 @@ import ladysBackToBack from "/public/ladys-back-to-back.jpg";
 export default function Home() {
   const mainSections: PageInfo[] = [
     {
-      id: "1",
+      id: "aboutus",
       title: "Who are Green Cleaners?",
       sections: [
         {
@@ -31,7 +31,7 @@ export default function Home() {
       imageAlt: "image",
     },
     {
-      id: "2",
+      id: "services",
       title: "What are are services?",
       sections: [
         {
@@ -53,7 +53,7 @@ export default function Home() {
       imageAlt: "image",
     },
     {
-      id: "3",
+      id: "servicesplus",
       title: "Where do we service?",
       sections: [
         {

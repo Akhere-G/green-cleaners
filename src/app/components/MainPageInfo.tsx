@@ -25,7 +25,8 @@ export default function HomePageInfo({ pageInfo }: HomePageInfoProps) {
         return (
           <section
             key={id}
-            className={`card flex gap-2 flex-col mb-10 ${
+            id={id}
+            className={`card flex gap-4 flex-col mb-10 ${
               isReversed ? "md:flex-row-reverse" : "md:flex-row"
             }`}
           >
@@ -50,7 +51,7 @@ export default function HomePageInfo({ pageInfo }: HomePageInfoProps) {
             </div>
             <div className="min-h-[250px] max-h-[300px] flex-[0.3] relative">
               <Image
-                className="object-cover"
+                className="object-cover rounded-md"
                 src={image}
                 alt={imageAlt}
                 fill

@@ -92,8 +92,8 @@ function JoinUsSection() {
   };
 
   return (
-    <div>
-      <h2 className="text-center bg-green-950 text-white font-bold -mt-12 p-10">
+    <div id="contact">
+      <h2 className="text-center bg-green-950 text-white font-bold -mt-12 p-10 rounded-md">
         All our services provide the best, high quality service
       </h2>
       <form className="card my-8" onSubmit={handleSubmit}>

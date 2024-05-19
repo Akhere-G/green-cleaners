@@ -6,7 +6,7 @@ import homeInterior from "/public/home-interior.jpg";
 export default function ValueSection() {
   return (
     <>
-      <section className=" text-white relative">
+      <section id="about" className="text-white relative">
         <div className="bg-green-700 absolute w-[200vw] h-full -z-10 -translate-x-1/2"></div>
         <div className=" flex flex-col md:flex-row w-100 h-100 mx-auto max-w-6xl">
           <div className="flex-[0.5] min-h-[250px] relative mt-10 md:mt-0">

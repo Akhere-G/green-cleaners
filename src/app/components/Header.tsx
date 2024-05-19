@@ -4,9 +4,9 @@ import React from "react";
 export default function Header() {
   const links = [
     { title: "Home", link: "/" },
-    { title: "Services", link: "/#services" },
-    { title: "About us", link: "/#about" },
-    { title: "Contact", link: "/#contact" },
+    { title: "Services", link: "#services" },
+    { title: "About us", link: "#about" },
+    { title: "Contact", link: "#contact" },
   ];
 
   return (

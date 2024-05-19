@@ -16,3 +16,25 @@ a:hover {
   text-decoration: underline;
   color: #6a6;
 }
+
+.title-primary {
+  @apply text-2xl;
+  @apply text-green-900;
+  @apply font-bold;
+}
+
+.title-secondary {
+  @apply text-2xl;
+  @apply text-gray-50;
+  @apply font-bold;
+}
+
+.subtitle-primary {
+  @apply text-xl;
+  @apply text-green-900;
+}
+
+.subtitle-secondary {
+  @apply text-xl;
+  @apply text-gray-50;
+}

@@ -2,6 +2,10 @@ import Image from "next/image";
 import HomePageInfo, { PageInfo } from "./components/MainSection";
 import ValueSection from "./components/ValueSection";
 import JoinUsSection from "./components/JoinUsSection";
+import hero from "/public/cleaners.jpg";
+import ladyHovering from "/public/lady-hovering.jpg";
+import ladyCleaningWall from "/public/lady-cleaning-wall.jpg";
+import ladysBackToBack from "/public/ladys-back-to-back.jpg";
 
 export default function Home() {
   const mainSections: PageInfo[] = [
@@ -23,7 +27,7 @@ export default function Home() {
           ],
         },
       ],
-      image: "/lady-hovering.jpg",
+      image: ladyHovering,
       imageAlt: "image",
     },
     {
@@ -45,7 +49,7 @@ export default function Home() {
         },
       ],
 
-      image: "/lady-cleaning-wall.jpg",
+      image: ladyCleaningWall,
       imageAlt: "image",
     },
     {
@@ -73,7 +77,7 @@ export default function Home() {
           ],
         },
       ],
-      image: "/ladys-back-to-back.jpg",
+      image: ladysBackToBack,
       imageAlt: "image",
     },
   ];
@@ -82,8 +86,9 @@ export default function Home() {
       <div className="absolute w-screen left-0 h-52 object-left-top filter">
         <Image
           className="object-cover brightness-50"
-          src="/cleaners.jpg"
+          src={hero}
           alt="cleaners"
+          placeholder="blur"
           fill
           sizes="(min-width: 1280px) 278px, (min-width: 1040px) calc(12.73vw + 118px), (min-width: 800px) 33.18vw, (min-width: 540px) 50vw, calc(100vw - 16px)"
         />

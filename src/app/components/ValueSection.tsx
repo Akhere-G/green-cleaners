@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Values from "./Values";
+import homeInterior from "/public/home-interior.jpg";
 
 export default function ValueSection() {
   return (
@@ -11,7 +12,7 @@ export default function ValueSection() {
           <div className="flex-[0.5] min-h-[250px] relative mt-10 md:mt-0">
             <Image
               className="object-cover"
-              src="/home-interior.jpg"
+              src={homeInterior}
               alt="Home interior"
               fill
               sizes="(min-width: 1280px) 278px, (min-width: 1040px) calc(12.73vw + 118px), (min-width: 800px) 33.18vw, (min-width: 540px) 50vw, calc(100vw - 16px)"

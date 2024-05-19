@@ -15,16 +15,17 @@ export default function Home() {
       sections: [
         {
           title: null,
-          paragraphs: [
-            `Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          paragraph: `Lorem, ipsum dolor sit amet consectetur adipisicing elit.
          Ipsam quae autem animi, eius, quaerat consectetur quod
          cupiditate corrupti nemo tempora debitis atque maxime
          itaque unde voluptatibus, voluptatum magnam suscipit!`,
-            `Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-         Ipsam quae autem animi, eius, quaerat consectetur quod
-         cupiditate corrupti nemo tempora debitis atque maxime
-         itaque unde voluptatibus, voluptatum magnam suscipit!`,
-          ],
+        },
+        {
+          title: null,
+          paragraph: `Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Ipsam quae autem animi, eius, quaerat consectetur quod
+          cupiditate corrupti nemo tempora debitis atque maxime
+          itaque unde voluptatibus, voluptatum magnam suscipit!`,
         },
       ],
       image: ladyHovering,
@@ -36,8 +37,7 @@ export default function Home() {
       sections: [
         {
           title: null,
-          paragraphs: [
-            `Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          paragraph: `Lorem, ipsum dolor sit amet consectetur adipisicing elit.
          Ipsam quae autem animi, eius, quaerat consectetur quod
          repudiandae veritatis tenetur repellat labore sapiente
          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -45,7 +45,6 @@ export default function Home() {
          repudiandae veritatis tenetur repellat labore sapiente
          cupiditate corrupti nemo tempora debitis atque maxime
          itaque unde voluptatibus, voluptatum magnam suscipit!`,
-          ],
         },
       ],
 
@@ -58,23 +57,19 @@ export default function Home() {
       sections: [
         {
           title: null,
-          paragraphs: [
-            `Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          paragraph: `Lorem, ipsum dolor sit amet consectetur adipisicing elit.
          Ipsam quae autem animi, eius, quaerat consectetur quod
          dolorum! Eaque explicabo quam, nulla iusto eius soluta
          cupiditate corrupti nemo tempora debitis atque maxime
          itaque unde voluptatibus, voluptatum magnam suscipit!`,
-          ],
         },
         {
           title: "Greater London",
-          paragraphs: [
-            `Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          paragraph: `Lorem, ipsum dolor sit amet consectetur adipisicing elit.
          Ipsam quae autem animi, eius, quaerat consectetur quod
          libero quae, a voluptate dolore mollitia adipisci
          cupiditate corrupti nemo tempora debitis atque maxime
          itaque unde voluptatibus, voluptatum magnam suscipit!`,
-          ],
         },
       ],
       image: ladysBackToBack,

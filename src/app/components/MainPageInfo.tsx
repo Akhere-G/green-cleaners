@@ -3,7 +3,7 @@ import React from "react";
 
 type Section = {
   title: string | null;
-  paragraphs: string[];
+  paragraph: string;
 };
 
 export type PageInfo = {
@@ -40,11 +40,9 @@ export default function HomePageInfo({ pageInfo }: HomePageInfoProps) {
                         {section.title}
                       </h3>
                     ) : null}
-                    {section.paragraphs.map((paragraph, i) => (
-                      <p className="pb-4" key={i}>
-                        {paragraph}
-                      </p>
-                    ))}
+                    <p className="pb-4" key={i}>
+                      {section.paragraph}
+                    </p>
                   </div>
                 ))}
               </div>
